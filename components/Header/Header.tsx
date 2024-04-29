@@ -75,6 +75,7 @@ export default memo<Props>(function (props) {
     const borderRadius = withTiming(show ? 8 : 50);
     return {
       width,
+      zIndex: 2,
       borderRadius,
     }
   }, [show])
@@ -163,7 +164,6 @@ const styles = createStyleSheet(({ colors, space }) => ({
     top: 10,
     left: space.container,
     minHeight: 50,
-    zIndex: 2,
     position: 'absolute',
     paddingLeft: 12,
     backgroundColor: colors.background,

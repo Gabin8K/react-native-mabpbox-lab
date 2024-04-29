@@ -17,6 +17,7 @@ export default function TabOneScreen() {
       <MapView
         location={location}
       />
+      
     </View>
   );
 }

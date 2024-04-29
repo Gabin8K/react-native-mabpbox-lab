@@ -27,16 +27,16 @@ const NAVIGATION_MODE = [
   },
   {
     id: 2,
-    name: 'Walking',
-    icon: 'walk-outline',
+    name: 'Cycling',
+    icon: 'bicycle-outline',
     active: false
   },
   {
     id: 3,
-    name: 'Cycling',
-    icon: 'bicycle-outline',
+    name: 'Walking',
+    icon: 'walk-outline',
     active: false
-  }
+  },
 ]
 
 
@@ -57,7 +57,7 @@ export default memo<Props>(function (props) {
       ...item,
       active: item.id === id
     })))
-    props.onModeChange?.(id === 1 ? 'driving' : id === 2 ? 'walking' : 'cycling');
+    props.onModeChange?.(id === 1 ? 'driving' : id === 2 ? 'cycling' : 'walking');
   }, [])
 
 
